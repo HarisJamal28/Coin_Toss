@@ -1,0 +1,312 @@
+::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+#Toss{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 200px;
+    // border: 1px solid black;
+
+}
+
+#Toss img{
+    height: 100%;
+    width: 50%;
+    min-width: 200px;
+}
+
+h1{
+    min-width: 500px;
+    background-color: brown;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 1024px) {
+    #Toss img{
+        height: 20%;
+        width: 25%;
+    }
+  }
+
+
+#HeadsOrTails{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    // border: 1px solid black;
+    // padding: 10px;
+    width: 500px;
+    gap: 2rem;
+    div{
+        font-size: 3rem;
+    }
+}
+
+#HeadsOrTails aside{
+    // margin: 20px;
+    width: 100%;
+    background-color: brown;
+    color: white;
+    padding: 2rem;
+
+
+    &:first-child{
+        // border-right: 1rem solid brown;
+    }
+    // border: 1px dotted blue;
+}
+
+
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // border: 1px solid black;
+
+#background{
+    background-image: url('./back.jpg');
+    background-size: 100%;
+    // border: 10px solid black;
+    padding: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    min-width: 400px;
+}
+}
+
+h3,h1{
+    white-space: nowrap;
+    // border: 1px solid red;
+    font-family: 'Franklin Gothic Medium'
+}
+
+.Actions{
+    width: 500px;
+    // border: 1px solid black;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    button{
+        width: 100%;
+        border: 0px;
+        height: 100%;
+        background-color: brown;
+        color: white;
+    }
+}
+
+button{
+    font-family: 'Franklin Gothic Medium'
+}
+
+#Heads{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100%;
+}
+
+#Tails{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100%;
+}
+
+table{
+    width: 500px;
+    border: 5px solid brown;
+    // border-collapse: collapse;
+    thead{
+        tr{
+            background-color: brown;
+            th{
+                padding: 1rem;
+                color: white;
+                border-right: 5px solid rgb(131, 32, 32);
+                &:last-child{
+                    border: 0;
+                }
+            }
+        }
+    }
+    tbody{
+        tr{
+            td{
+                padding: 1rem;
+                border-right: 5px solid brown;
+                
+                &:last-child{
+                    border: 0;
+                }
+            }
+            border-bottom: 5px solid brown;
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    #Toss{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+        width: 200px;
+        // border: 1px solid black;
+    
+    }
+    
+    #Toss img{
+        height: 100%;
+        width: 50%;
+        min-width: 200px;
+    }
+    
+    h1{
+        min-width: 300px;
+        background-color: brown;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #HeadsOrTails{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        // border: 1px solid black;
+        // padding: 10px;
+        width: 300px;
+        gap: 2rem;
+        div{
+            font-size: 1rem;
+        }
+    }
+    
+    #HeadsOrTails aside{
+        // margin: 20px;
+        width: 100%;
+        background-color: brown;
+        color: white;
+        padding: 1rem;
+        font-size: 1rem;
+
+    
+    
+        &:first-child{
+            // border-right: 1rem solid brown;
+        }
+        // border: 1px dotted blue;
+    }
+    
+    
+    
+    .container{
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        // border: 1px solid black;
+    
+    #background{
+        background-image: url('./back.jpg');
+        background-size: cover;
+        background-position: center left -12px;
+        background-repeat: no-repeat;
+        // border: 10px solid black;
+        padding: 1.3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        min-width: 300px;
+    }
+    }
+    
+    h3,h1{
+        white-space: nowrap;
+        // border: 1px solid red;
+        font-family: 'Franklin Gothic Medium'
+    }
+    
+    .Actions{
+        width: 200px;
+        // border: 1px solid black;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        button{
+            width: 100%;
+            border: 0px;
+            height: 100%;
+            background-color: brown;
+            color: white;
+            text-wrap: nowrap;
+        font-family: 'Franklin Gothic Medium'
+
+        }
+    }
+    
+    button{
+        font-family: 'Franklin Gothic Medium'
+    }
+    
+    #Heads{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 100%;
+    }
+    
+    #Tails{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 100%;
+    }
+    
+    table{
+        width: 300px;
+        border: 5px solid brown;
+        font-size: 1rem;
+
+        // border-collapse: collapse;
+        thead{
+            tr{
+                background-color: brown;
+                th{
+                    padding: 1rem;
+                    color: white;
+                    border-right: 5px solid rgb(131, 32, 32);
+                    &:last-child{
+                        border: 0;
+                    }
+                }
+            }
+        }
+        tbody{
+            tr{
+                td{
+                    padding: 1rem;
+                    border-right: 5px solid brown;
+
+                    &:last-child{
+                        border: 0;
+                    }
+                }
+                border-bottom: 5px solid brown;
+            }
+        }
+    }
+    
+  }
